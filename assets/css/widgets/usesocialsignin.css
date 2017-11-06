@@ -1,0 +1,13 @@
+body{
+  background-color: #009688;
+}
+
+.use-social-signin-title{
+  font-family: "Roboto Slab",serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+
+  color: #ffffff;
+  background: linear-gradient( to right, #00acc1, #ffffff);
+}

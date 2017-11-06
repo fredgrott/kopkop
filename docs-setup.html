@@ -1,0 +1,500 @@
+<!-- html5 doctype -->
+<!DOCTYPE html>
+<!--
+    StoicMultiMOne
+    FRED GROTT
+    http://www.uplabs.com/fred_grott
+    https://twitter.com/fredgrott
+
+-->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Specifically to get responive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
+    <!-- For MS Edge, Google's Chrome and Apple's Safari donot require this-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- REMOVE THIS IN THE FINAL VERSION OF YOUR SITE -->
+    <meta name="robots" content="noindex">
+
+    <!-- No searrch engine uses meta keywords anymore, they just pick-up meta description instead-->
+    <meta name="description" content="StoicMultiMOne is a multipurpose web template made with Materialize CSS framework">
+    <meta name="author" content="Fred Grott">
+
+    <title>Docs | SetUp</title>
+
+    <!-- Your favicons generate from realfavicongenerator.net go below-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS, CSS framework first than fonts than custom
+           CDN Urls to load this via the cloud are in the docs
+       -->
+    <link href="assets/css/fonts.css"  rel="stylesheet">
+    <link href="assets/css/materialize.css"  rel="stylesheet" media="screen,projection">
+    <link href="assets/css/material-icons.css" rel="stylesheet" >
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/fredgrott-materialize.css" rel="stylesheet">
+    <link href="assets/css/fredgrott-basic.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css"  rel="stylesheet">
+
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <!-- Schema.org markup goes here -->
+
+    <!-- Open Graph markup goes here -->
+
+    <!-- Twitter Card markup goes here -->
+  </head>
+  <body>
+    <header>
+      <!-- navbar-fixed
+
+           Remeber, on non-index pages page-content has to be adjusted
+           down to account for the navbar-fxed setup.
+       -->
+      <div id="my-navbar-fixed" class="navbar-fixed navbar-fixed-custom">
+        <!-- nav, nav-extended-->
+        <nav id="mynavbar" class="nav-extended" role="navigation">
+          <!-- nav-wrapper
+
+               dont need to separate out container as a separate element as it
+               has no semantic meaning in this section of html markup
+            -->
+          <div class="nav-wrapper container">
+            <!-- dopdown definitions
+
+                 I wanted a subtle matching of the rest of the website UI so
+                 rgba was used for backgrounds...see style.css for details.
+             -->
+            <ul id="about" class="dropdown-content">
+                <li><a href="about-intro.html">Intro</a></li>
+                <li><a href="about-careers.html">Careers</a></li>
+                <li><a href="about-contact.html">Contact</a></li>
+                <li><a href="about-team.html">Team</a></li>
+            </ul>
+            <ul id="news" class="dropdown-content">
+               <li><a href="news-blog.html">Blog</a></li>
+               <li><a href="news-events.html">Events</a></li>
+               <li><a href="news-newsletter.html">Newsletter</a></li>
+            </ul>
+            <ul id="services" class="dropdown-content">
+               <li><a href="services-intro.html">Intro</a></li>
+               <li><a href="services-clientgallery.html">Clients</a></li>
+               <li><a href="services-packages.html">Packages</a></li>
+            </ul>
+            <ul id="ecom" class="dropdown-content">
+               <li><a href="ecom-ecart.html">eCart</a></li>
+               <li><a href="ecom-invoice.html">Invoice</a></li>
+               <li><a href="ecom-orders.html">Orders</a></li>
+               <li><a href="ecom-payment-checkout.html">Payment</a></li>
+               <li><a href="ecom-products.html">Products</a></li>
+            </ul>
+            <ul id="docs" class="dropdown-content">
+               <li><a href="docs-intro.html">Intro</a></li>
+               <li><a href="docs-credits.html">Credits</a></li>
+               <li><a href="docs-features.html">Features</a></li>
+               <li><a href="docs-pages.html">Pages</a></li>
+               <li class="active"><a href="docs-setup.html">SetUp</a></li>
+            </ul>
+            <!-- These two dropdown-content things you are
+                 programatically changing the list item content upon login and
+                 ecart states
+              -->
+            <ul id='ecart' class="dropdown-content my-dropdowncontent-ecart">
+               <div class="shopping-cart-header">
+                    &nbsp;&nbsp;<i class="fa fa-shopping-cart"></i><span class="">4</span> <span class="">&nbsp;&nbsp;Total:</span>
+                    <span class=""><b>$2,229.97</b></span>
+               </div>
+               <li><a href="ecom-ecart.html" class="" >2 Bikes</a></li>
+               <li><a href="ecom-ecart.html" class="">2 scates</a></li>
+               <li><a href="ecom-ecart.html" class='btn'><i class="fa  fa-shopping-cart"></i><span class="">Edit</span></a></li>
+               <li><a href="ecom-payment-checkout.html" class='btn'><i class="fa  fa-cc "></i><span class="">Checkout</span></a></li>
+            </ul>
+            <ul id='login' class="dropdown-content my-dropdowncontent-login">
+                  <li><a href="signout.html" class="">SignOut</a></li>
+                  <!-- if state is not loggedin than this one
+                       and programmically remove the other item from the login list
+                  <li><a href="signupsignin.html">SignIn</a></li> -->
+           </ul>
+
+
+
+
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons mobile-menu-button">menu</i></a>
+            <ul class="navbar-top-menu hide-on-med-and-down">
+                   <li><a href="index.html"><img src="assets/images/stoicdesignlogotwo.png"></a></li>
+                   <li>&nbsp;&nbsp;&nbsp;Suite 12, 56 Monon Street, Westville, IN 46391 USA</li>
+                   <!-- href'ing the phone so we can use the tel: breaks things, so not using at the moment in
+                        this prticular space of the website -->
+                   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-877-666-6767</li>
+            </ul>
+            <!-- logo for mobile
+
+                 Kept aligned center so that we have enough room for the signincart
+                 menu on mobile
+            -->
+            <a href="index.html" class="brand-logo hide-on-large-only center"><img src="assets/images/stoicdesignlogotwo.png"></a>
+            <ul class="signincart">
+                <!-- Not sure why a font-awesome icon goofs up when we add more than one here so
+                     using lock_outline and lock_open from material-icons-->
+                <li><a href="#!" class="dropdown-button navbar-login-dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="login"><i class="fa  fa-lock"></i></a></li>
+                <li><a href="#!" class="dropdown-button navbar-cart-dropdown-button" data-beloworigin="true" data-hover="true" href="#!" data-activates="ecart"><i class="fa  fa-shopping-cart"></i>4</a></li>
+            </ul>
+            <!-- ./nav-wrapper -->
+          </div>
+          <!-- Materialize docs are wrong, nav-content for nav-extended needs to be outside
+               of the nav-wraper tags
+            -->
+          <!-- nav-content -->
+          <div class="nav-content container">
+            <!-- hack-ish solution to clear-out as the firm logo is a different height than the navbaqr text of the
+                 first line -->
+            <br class="hide-on-med-and-down"/>
+            <!-- bottom-mwenu
+
+                 See the style.css as I fix some things  to
+                 tiddy up the nav-content portion
+            -->
+            <ul class="navbar-bottom-menu hide-on-med-and-down ">
+              <!-- Materialize tabs dont allow dropdowns so I made something to work,
+                   see style.css for details
+
+                   Also, remember that one can set the li a active even with dropdown buttons thus
+                   it puts desktop on par with what we do on mobile to indicate what
+                   section of the website the website viewer is in.
+                   -->
+                   <li><a class="dropdown-button navbar-bottom-menu-tab" data-beloworigin="true" data-hover="true" href="#!" data-activates="about">About&nbsp;<i class="fa fa-arrow-circle-o-down"></i></a></li>
+                   <li><a class="dropdown-button navbar-bottom-menu-tab" data-beloworigin="true" data-hover="true" href="#!" data-activates="news">News&nbsp;<i class="fa fa-arrow-circle-o-down"></i></a></li>
+                   <li><a class="dropdown-button navbar-bottom-menu-tab" data-beloworigin="true" data-hover="true" href="#!" data-activates="services">Services&nbsp;<i class="fa fa-arrow-circle-o-down"></i></a></li>
+                   <li><a class="dropdown-button navbar-bottom-menu-tab" data-beloworigin="true" data-hover="true" href="#!" data-activates="ecom">eCom&nbsp;<i class="fa fa-arrow-circle-o-down"></i></a></li>
+                   <li class="active"><a class="dropdown-button navbar-bottom-menu-tab" data-beloworigin="true" data-hover="true" href="#!" data-activates="docs">Docs&nbsp;<i class="fa fa-arrow-circle-o-down"></i></a></li>
+              <!-- ./navbar-bottom-menu -->
+            </ul>
+            <!--./nav-content -->
+          </div>
+          <!-- ./nav, nav-extended -->
+        </nav>
+      <!-- ./navbar-fixed -->
+      </div>
+      <!-- slide-out menu definition
+
+           needs to be outside of the navbar-fixed div tags to work properly
+      -->
+      <!-- side-nav -->
+      <ul id="mobile-demo" class="side-nav  side-nav-custom">
+        <li>
+           <!-- since viewers will see this on mobile,
+                might as well do a little call-to-action
+                as far as listing the support email-->
+           <div class="user-view">
+             <div class="background">
+               <img class="responsive-img" src="assets/images/slides/stoicpurpose-slideone.png">
+            </div>
+            <!-- remember we have limited space here, so its the most
+                 important possible calls-to-action non-menu stuff from
+                 the desktop navbar goes here -->
+                 <a href="#!email"><span class=" email">support@stoicdesign.io</span></a>
+                 <a href="#!phone"><span class=" phone"><a href="tel:1-877-666-6767" class="white-text">1-877-666-6767</a></span></a>
+          </div>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion ">
+              <li>
+                 <a class="collapsible-header">About<i class="material-icons">arrow_drop_down</i></a>
+                 <div class="collapsible-body">
+                      <ul>
+                         <li><a href="about-intro.html">Intro</a></li>
+                         <li><a href="about-careers.html">Careers</a></li>
+                         <li><a href="about-contact.html">Contact</a></li>
+                         <li><a href="about-team.html">Team</a></li>
+                      </ul>
+                </div>
+              </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion ">
+                <li>
+                   <a class="collapsible-header">News<i class="material-icons">arrow_drop_down</i></a>
+                   <div class="collapsible-body">
+                       <ul>
+                          <li><a href="news-blog.html">Blog</a></li>
+                          <li><a href="news-events.html">Events</a></li>
+                          <li><a href="news-newsletter.html">Newsletter</a></li>
+                      </ul>
+                   </div>
+                </li>
+             </ul>
+         </li>
+         <li class="no-padding">
+             <ul class="collapsible collapsible-accordion ">
+                 <li>
+                    <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                         <ul>
+                            <li><a href="services-intro.html">Intro</a></li>
+                            <li><a href="services-clientgallery.html">Clients</a></li>
+                            <li><a href="services-packages.html">Packages</a></li>
+                         </ul>
+                    </div>
+                  </li>
+             </ul>
+         </li>
+         <li class="no-padding">
+             <ul class="collapsible collapsible-accordion ">
+                 <li>
+                    <a class="collapsible-header">eCom<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                    <ul>
+                       <li><a href="ecom-ecart.html">eCart</a></li>
+                       <li><a href="ecom-invoice.html">Invoice</a></li>
+                       <li><a href="ecom-orders.html">Orders</a></li>
+                       <li><a href="ecom-payment-checkout.html">Payment</a></li>
+                       <li><a href="ecom-products.html">Products</a></li>
+                    </ul>
+                    </div>
+                   </li>
+             </ul>
+          </li>
+          <li class="no-padding">
+             <ul class="collapsible collapsible-accordion ">
+                 <li>
+                    <a class="collapsible-header active">Docs<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                    <ul>
+                        <li><a href="docs-intro.html">Intro</a></li>
+                        <li><a href="docs-credits.html">Credits</a></li>
+                        <li><a href="docs-features.html">Features</a></li>
+                        <li><a href="docs-pages.html">Pages</a></li>
+                        <li class="active"><a href="docs-setup.html">SetUp</a></li>
+                    </ul>
+                    </div>
+                 </li>
+             </ul>
+          </li>
+        <!-- ./side-nav -->
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <br/>
+          <br/>
+          <br/>
+        </div>
+      </div>
+        <div class="container">
+
+             <section id="docs-setup">
+               <div class="row">
+                 <div class="title-gradient-one">
+                   <h3 class="page-title center">Docs SetUp</h3>
+                 </div>
+                 <br/>
+                 <div class="col l6 s12">
+               <div class="card-panel ">
+                 <div class="card-content">
+                    <i class="fa fa-3x fa-send-o"></i>
+                   <h4 class="card-header">First Steps</h4>
+                   <p>The general first steps:</p>
+                   <ul>
+                     <li><i class="fa fa-check-circle-o cyan-text"></i>If it's not a private intranet site, remove the meta-robots-nonindex line from all html files. Than remove the disallow back-slash in the robots.txt file</li>
+                     <li><i class="fa fa-check-circle-o cyan-text"></i>Change the css and js lines in the html head of every html file if you are using CDNs to load those things.</li>
+                     <li><i class="fa fa-check-circle-o cyan-text"></i>Modify the href links to suit your site's top-down folder structure.</li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="col l6 s12">
+                <div class="card-panel ">
+                  <div class="card-content">
+                    <i class="fa fa-3x fa-book"></i>
+                    <h4 class="card-header">HTML, CSS, JS Docs</h4>
+                    <p>
+                       The basic docs to HTML, CSS, JS, and DOM. You can also find more in-depth
+                       advance documents from the same site authored by Mozilla Staff at <a href="https://developer.mozilla.org">MDN</a>.
+                     </p>
+                     <ul>
+                         <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN: HTML</a></li>
+                         <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN: CSS</a></li>
+                         <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN: Javascript</a></li>
+                         <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">MDN: DOM</a></li>
+                     </ul>
+
+                  </div>
+                </div>
+              </div>
+               </div>
+               <div class="row">
+              <div class="col l6 s12">
+               <div class="card-panel ">
+                 <div class="card-content">
+                   <i class="fa fa-3x fa-sticky-note"></i>
+                   <h4 class="card-header">Browser DevTools</h4>
+                   <p>
+                      Each browser vendor has their own dev tool set for inspecting html, css, js, and the DOM. Here are the
+                      url pointers to their user-manuals for those tools:
+                    </p>
+                    <ul>
+                      <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/Tools">Mozilla FireFox</a></li>
+                      <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome</a></li>
+                      <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/GettingStarted/GettingStarted.html">Apple Safari</a></li>
+                      <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide">Microsoft Edge</a></li>
+                      <li><i class="fa fa-check-circle-o cyan-text"></i><a href="http://www.opera.com/dragonfly/documentation/">Opera Dragonfly</a></li>
+                    </ul>
+
+                 </div>
+               </div>
+             </div>
+             <div class="col l6 s12">
+               <div class="card-panel ">
+                 <div class="card-content">
+                   <i class="fa fa-3x fa-server"></i>
+                   <h4 class="card-header">CDN URLs</h4>
+                   <p>
+                      The CDN urls to use to load resoruce dependencies from the cloud:
+                      <h5>Roboto Font</h5>
+
+                        <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"></code></pre>
+
+                      <h5>Roboto Slab Font</h5>
+                      <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"></codde></pre>
+
+                      <h5>Roboto Mono Font</h5>
+                      <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"></code></pre>
+                      <h5>Material  Icons</h5>
+                      <pre><code>&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></code></pre>
+                      <h5>Font Awesome</h5>
+                      <code><pre>&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></pre></code>
+                      <h5>JQuery</h5>
+                      <code><pre>&lt;script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">&lt;/script></pre></code>
+                      <h5>Materialize CSS Framework</h5>
+                      <code><pre>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+                      &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">&lt;/script></pre></code>
+                    </p>
+                 </div>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+             <div class="col l6 s12">
+              <div class="card-panel ">
+                <div class="card-content">
+                  <i class="fa fa-3x fa-trophy"></i>
+                  <h4 class="card-header">Extra Resources</h4>
+                  <p>
+                     Extra resources for the CSS frameework, Google Material Design, etc:
+                     <ul>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="http://materializecss.com">Materialize CSS DOCS</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="http://material.io">Google Material Design</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="http://api.jquery.com/">JQuery Api</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://stackoverflow.com/questions/tagged/materialize">StackOverflow Materialize Question Forum</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://github.com/davatron5000/Lettering.js/wiki">LetteringJSWiki Docs</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://caniuse.com/">Can I USE CSS by Browser</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://kapeli.com/mdn_offline">MDN 3rdParty Doc Dwonload</a></li>
+                       <li><i class="fa fa-check-circle-o cyan-text"></i><a href="https://developer.mozilla.org/en-US/docs/MDN/About#Downloading_content">MDN Doc Downloads</a></li>
+                     </ul>
+                     <p>
+                       Most of the technology stacks have implemented automation to generate Dash doclets for all the manuals. On non-Apple platforms you can get the Dash doclets to
+                       read offline with <a href="https://velocity.silverlakesoftware.com/">Velocity</a>. Its a free program with just a weekly buy reminder, nothing too intrusive. Its the
+                       Dash doclets viewer that I use when I am on MS Windows or Linux platforms.
+                     </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+             </section>
+
+        </div>
+    </main>
+    <!--footer -->
+    <footer id="pagefooter" class="page-footer   page-footer-custom">
+       <div class="container">
+        <div class="row">
+          <div class="col l3 m6 s12">
+                 <!-- in small mobile devices this is the first bit of footer content that
+                      appears so let's have the small mobile device viewer see the
+                      firm logo first -->
+                 <h5 class="footer-col-header">Address</h5>
+                 <h5 class=""><img src="assets/images/stoicdesignlogotwo.png"></h5>               <!-- Remember, to repeat your company mailing address info in your schema.org declaration in the html head of your
+                      website. -->
+                 <h6 class="">Stoic  Design<br/>
+                                        Suite 12<br/>
+                                        56 Monon Street<br/>
+                                        Westville, IN 46391<br/>
+                                        USA</h6>
+                                        <br/>
+                                        <br/>
+          </div>
+          <div class="col l3 m6 s12">
+                 <h5 class=" footer-col-header">Contact</h5>
+                 <ul class="footer-col-list">
+                   <li><a class="footer-col-list-item" href="#!"><i class="fa fa-envelope "></i>&nbsp;&nbsp;sales@stoicdesign.io</a></li>
+                   <li><a class="footer-col-list-item" href="#!"><i class="fa fa-envelope "></i>&nbsp;&nbsp;careers@stoicdesign.io</a></li>
+                   <li><a class="footer-col-list-item" href="#!"><i class="fa fa-skype "></i>&nbsp;&nbsp;biz.stoicdesign</a></li>
+                   <li><a class="footer-col-list-item" href="#!"><i class="fa fa-slack "></i>&nbsp;&nbsp;stoicdesign</a></li>
+                   <li><a class="footer-col-list-item" href="tel:1-877-456-4567"><i class="fa fa-phone "></i>&nbsp;&nbsp;&nbsp;1-877-666-6767</a></li>
+                 </ul>
+
+          </div>
+          <div class="col l3 m6 s12">
+                 <!-- Not to repeat navigation, but to spark a reminder of certain
+                      website entry points that the viewer may want to visit once
+                      they have scanned down all the way to the footer
+                    -->
+                 <h5 class="footer-col-header">Navigation</h5>
+                 <ul class="footer-col-list">
+                   <li><a class="footer-col-list-item" href="about-intro.html"><i class="fa fa-info "></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                   <li><a class="footer-col-list-item" href="about-careers.html"><i class="fa fa-users "></i>&nbsp;&nbsp;Careers</a></li>
+                   <li><a class="footer-col-list-item" href="news-newsletter.html"><i class="fa fa-newspaper-o "></i>&nbsp;&nbsp;Newsletter</a></li>
+                   <li><a class="footer-col-list-item" href="signupsignin.html"><i class="fa fa-bell-o "></i>&nbsp;&nbsp;&nbsp;SignUp</a></li>
+                   <li><a class="footer-col-list-item" href="tos.html"><i class="fa fa-handshake-o "></i>&nbsp;Terms Of Service</a></li>
+                   <li><a class="footer-col-list-item" href="privacy.html"><i class="fa fa-support "></i>&nbsp;&nbsp;&nbsp;Privacy</a></li>
+                   <li><a class="footer-col-list-item" href="sitemap.html"><i class="fa fa-sitemap "></i>&nbsp;&nbsp;&nbsp;SiteMap</a></li>
+                 </ul>
+        </div>
+        <div class="col l3 m6 s12">
+                 <h5 class=" footer-col-header">Connect</h5>
+                 <!-- its tempting to use icons here, better to use both to balance with
+                      what I did in the other footer column -->
+                 <ul class="footer-col-list">
+
+                   <li><a  href="#!" target="_blank" class="footer-col-list-item"><i class="fa fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                   <li><a  href="#!" target="_blank" class="footer-col-list-item"><i class="fa fa-google-plus-square "></i>&nbsp;Google+</a></li>
+                   <li><a  href="#!" target="_blank" class="footer-col-list-item"><i class="fa fa-linkedin-square "></i>&nbsp;LinkedIn</a></li>
+                   <li><a  href="#!" target="_blank" class="footer-col-list-item"><i class="fa fa-twitter-square "></i>&nbsp;Twitter</a></li>
+                   <li><a  href="#!" target="_blank" class="footer-col-list-item"><i class="fa fa-youtube-square "></i>&nbsp;YouTube</a></li>
+                 </ul>
+
+        </div>
+      </div>
+    </div>
+
+      <!-- footer-copyright -->
+           <div class="footer-copyright">
+             <div class="container">
+             &copy;2017 Copyright, all rights reserved made by <a href="http://www.uplabs.com/fred_grott" class=""><b>Fred Grott</b></a> with <a class="" href="http://www.materializecss.com"><b>Materialize CSS Framework</b></a>, <a href="atom.io" class=""><b>Atom</b></a>, and some Material Design flair.
+
+           </div>
+             <!-- /.footer-copyright -->
+           </div>
+     <!-- ./footer -->
+    </footer>
+  </body>
+</html>

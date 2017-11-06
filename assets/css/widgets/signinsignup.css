@@ -1,0 +1,38 @@
+body{
+  background-color: #009688;
+}
+
+
+
+.sign-in-sign-up-card-content{
+  background-color: #ffffff;
+}
+.remember-me{
+  font-family: "Roboto Mono",monospace;
+  font-weight: bold;
+}
+
+.tabs .tab a {
+  color: rgba(0, 77, 64, 0.7);
+  font-family: "Roboto Condensed",sans-serif;
+  font-weight: bold;
+  width: 99.9%;
+
+
+}
+.tabs .indicator {
+
+  background-color: #4dd0e1;
+
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+
+  color: #4dd0e1;
+}
+
+.sign-in-sign-up-divider{
+  height: 3px;
+  overflow: hidden;
+  background-color: #009688;
+
+}
